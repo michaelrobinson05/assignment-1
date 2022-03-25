@@ -3,16 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="mainSite.css">
 
     <script>
         function twoToThePowerOf(form) {
-            // 1. Input - read in the single
-            let power = parseInt(form.powerValue.value);
-            // 2. Processing - 2^ that value
-            let answer = Math.pow(2, power);
-            // 3. Output - the answer
+            //stores users' input in aa variable
+            let input = form.powerValue.value;
+
+            //calculates the input to the power of 2
+            let answer = Math.pow(input, 2)
+
+            //outputs the answer
             document.getElementById("powerResult").innerHTML = answer;
         }
     </script>
